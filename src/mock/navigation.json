@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "text": "HOME",
+        "url": "/home"
+    },
+    {
+        "id": 1,
+        "text": "FIBER",
+        "url": "/fiber"
+    },
+    {
+        "id": 2,
+        "text": "SOURCING",
+        "url": "/sourcing"
+    },
+    {
+        "id": 3,
+        "text": "DESIGN",
+        "url": "/design"
+    },
+    {
+        "id": 4,
+        "text": "MARKETING",
+        "url": "/marketing"
+    },
+    {
+        "id": 5,
+        "text": "IMPACT",
+        "url": "/impact"
+    },
+    {
+        "id": 6,
+        "text": "BLOG",
+        "url": "/blog"
+    },
+    {
+        "id": 7,
+        "text": "ABOUT US",
+        "url": "/about-us"
+    }
+]

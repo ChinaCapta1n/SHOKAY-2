@@ -1,19 +1,15 @@
 <template>
     <div>
-        BACK TO THE BEGINNING
+        <ShokayHeader />
+        <router-view></router-view>
+        <ShokayFooter />
     </div>
 </template>
 
-<script>
-export default {
+<script setup>
+import ShokayHeader from '@/components/header/index.vue';
+import ShokayFooter from '@/components/footer/index.vue';
 
-}
 </script>
 
-<style lang="less" scoped>
-div {
-    font-family: font-2;
-    font-size: 2.5rem;
-    color: var(--octonary-);
-}
-</style>
+<style lang="less" scoped></style>
