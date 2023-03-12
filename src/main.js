@@ -6,7 +6,5 @@ import '@/service/index.js';
 
 import './assets/styles/index.less';
 
-createApp(App).mount('#app');
-
 
 createApp(App).use(pinia).use(router).mount('#app');
