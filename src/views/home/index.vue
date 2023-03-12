@@ -1,7 +1,7 @@
 <template>
     <section class="home">
         <!-- banner -->
-        <home-banner :height="windowSize > 979 ? '13.7rem' : '16.2rem'" text="CONSIDERED EVERY THREAD OF THE WAY" imgUrl="../../src/assets/images/home/1.webp" />
+        <home-banner :height="windowSize > 979 ? '13.7rem' : '16.2rem'" text="CONSIDERED EVERY THREAD OF THE WAY" imgUrl="https://static.wixstatic.com/media/9f945e_52c6c0dae3e4461998d6d0b8b837cd36~mv2.png/v1/fill/w_2208,h_276,al_t,q_90,usm_0.66_1.00_0.01,enc_auto/9f945e_52c6c0dae3e4461998d6d0b8b837cd36~mv2.png" />
 
         <!-- meet the yak -->
         <meet-the-yak />
