@@ -22,6 +22,7 @@ defineProps({
     font-size: 1.8rem;
     transition: .2s all;
     font-family: venir-light;
+    cursor: pointer;
 
     &:hover {
         opacity: .8;

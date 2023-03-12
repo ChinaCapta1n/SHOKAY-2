@@ -71,6 +71,7 @@ const data = [
 
         .boxes {
             display: flex;
+            flex-wrap: wrap;
 
             .box {
                 width: 30.6rem;
@@ -123,8 +124,32 @@ const data = [
                 }
             }
         }
+    }
 
+    @media screen and (max-width: 979px) {
+        .container {
+            .boxes {
+                justify-content: center;
+                .box {
+                    margin: 0 1.5rem;
+                    height: auto;
+                    .text {
+                        padding-bottom: 10rem;
+                    }
+                }
+            }
+        }
+    }
 
+    @media screen and (max-width: 701px) {
+        .container {
+            .boxes {
+                .box {
+                    width: 80%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
     }
 }
 </style>

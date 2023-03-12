@@ -90,11 +90,25 @@ const data2 = [
 
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .about-us {
+    .common-banner {
+        & > h2 {
+            text-align: center;
+        }
+    }
     .container {
         max-width: 95rem;
         margin: 0 auto;
+    }
+
+    @media screen and (max-width: 979px) {
+        .common-banner {
+            & > h2 {
+                text-align: center;
+                width: 90%;
+            }
+        }
     }
 }
 </style>

@@ -39,5 +39,11 @@ const data = [
     }
 
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 979px) {
+        .container {
+            padding: 4vw;
+        }
+    }
 }
 </style>

@@ -60,5 +60,33 @@ import HomeButton from '../../../components/button/index.vue';
             padding: 0 2rem;
         }
     }
+
+    @media screen and (max-width: 979px) {
+        padding-top: 0;
+            .container {
+                flex-direction: column;
+                padding: 5vw;
+                .left, .right {
+                    width: 100%;
+                }
+
+                .left {
+                    height: auto;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                .right {
+                    & > h2 {
+                        margin: 3vw 0 6rem;
+                    }
+
+                    & > p {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
 }
 </style>

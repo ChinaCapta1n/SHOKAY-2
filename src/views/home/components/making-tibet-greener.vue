@@ -32,7 +32,7 @@ import HomeButton from '../../../components/button/index.vue';
         display: flex;
         align-items: center;
         height: 100%;
-
+        
         .left,
         .right {
             flex: 1;
@@ -63,6 +63,37 @@ import HomeButton from '../../../components/button/index.vue';
 
             &>button {
                 margin-top: 2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        height: auto;
+
+        .container {
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+
+                img {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+            .right {
+                padding: 6vw 3vw 3vw;
+                // & > h2 {
+                //     margin: 5vw 0;
+                // }
+
+                & > p {
+                    margin-top: 3rem;
+                }
+
+                & > button {
+                    margin: 3rem 0;
+                }
             }
         }
     }

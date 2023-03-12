@@ -138,5 +138,40 @@ const data = [
             }
         }
     }
+
+    @media screen and (max-width: 800px) {
+        .partners-banner {
+            & > img {
+                height: 30.2rem;
+            }
+            .box {
+                width: 90%;
+            }
+        }
+
+        .partner {
+            padding-top: 0;
+            .single {
+                flex-direction: column;
+                padding: 3vw;
+                height: auto;
+                width: 100%;
+
+                .left {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 5rem;
+                    & > img {
+                        margin-top: 1rem;
+                        width: 18rem;
+                        height: 18rem;
+                    }
+                }
+                .right {
+                    padding: 0 2vw;
+                }
+            }
+        }
+    }
 }
 </style>

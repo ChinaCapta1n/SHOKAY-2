@@ -36,5 +36,9 @@ defineProps({
         text-align: left;
         line-height: 1.8;
     }
+
+    @media screen and (max-width: 979px) {
+
+    }
 }
 </style>

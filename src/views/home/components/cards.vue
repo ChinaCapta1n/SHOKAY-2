@@ -53,6 +53,10 @@ const data = [
             height: 43.8rem;
             position: relative;
 
+            @media screen and (max-width: 611px) {
+                width: 100%;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -89,6 +93,24 @@ const data = [
                 &>p {
                     line-height: 1.8;
                     color: var(--quinary-color);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        margin-top: 0;
+        .container {
+            // flex-direction: column;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .card {
+                padding: 3vw;
+
+                img {
+                    object-fit: cover;
+                    // height: auto;
                 }
             }
         }

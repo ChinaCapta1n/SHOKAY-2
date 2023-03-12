@@ -37,5 +37,15 @@
         font-size: 4rem;
         font-family: avenir-light;
     }
+
+    @media screen and (max-width: 979px) {
+        height: 19.4rem;
+
+        & > h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    }
 }
 </style>

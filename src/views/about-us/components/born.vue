@@ -75,6 +75,30 @@ import ButtonWithArrow from '@/components/button-with-arrow/index.vue';
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        height: auto;
+        padding-top: 0;
+        .container {
+            flex-direction: column-reverse;
+            width: 100%;
+
+            .left {
+                & > h2 {
+                    margin: 3rem 0 5rem;
+                }
+
+                & > p {
+                    text-align: left;
+                }
+            }
+
+            .right {
+                width: 100%;
             }
         }
     }

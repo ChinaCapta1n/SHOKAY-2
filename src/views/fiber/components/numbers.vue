@@ -70,6 +70,21 @@ const data = [
             &>p {
                 text-align: left;
                 line-height: 1.8;
+                padding: 0 5vw;
+            }
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        .container {
+            .top {
+                flex-direction: column;
+                .box {
+                    margin-bottom: 4rem;
+                    &:nth-last-child(1) {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }

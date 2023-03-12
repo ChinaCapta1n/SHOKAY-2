@@ -50,6 +50,7 @@ const data = [
         display: flex;
         flex-direction: column;
         align-content: center;
+        padding: 0 3vw;
 
         &>p {
             padding: 6rem 0;
@@ -90,6 +91,16 @@ const data = [
                 }
             }
 
+        }
+    }
+
+    @media screen and (max-width: 797px) {
+        .container {
+            .box {
+            .small-image {
+                margin: 3rem 0;
+            }
+        }
         }
     }
 }

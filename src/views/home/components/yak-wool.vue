@@ -66,5 +66,17 @@
             font-size: 2.5rem;
         }
     }
+
+    @media screen and (max-width: 979px) {
+        min-height: 40rem;
+
+        .ceo-text {
+            padding: 3vw;
+
+            & > h2 {
+                margin-bottom: 4rem;
+            }
+        }
+    }
 }
 </style>

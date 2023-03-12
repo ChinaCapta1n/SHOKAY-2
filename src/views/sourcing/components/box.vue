@@ -79,5 +79,16 @@ defineProps({
             object-fit: cover;
         }
     }
+
+    @media screen and (max-width: 830px) {
+        flex-direction: column;
+        height: auto;
+        .left {
+            padding: 5vw;
+        }
+        .left, .right {
+            width: 100%;
+        }
+    }
 }
 </style>

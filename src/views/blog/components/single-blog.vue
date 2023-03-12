@@ -52,8 +52,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-
+import { onMounted, onUnmounted, ref } from 'vue';
 
 const threeDots = ref(null);
 
@@ -70,7 +69,11 @@ function hidePopUpBox(e) {
 }
 
 onMounted(() => {
-    document.addEventListener('click', hidePopUpBox)
+    document.addEventListener('click', hidePopUpBox);
+})
+
+onUnmounted(() => {
+    document.removeEventListener('click', hidePopUpBox);
 })
 
 const data = [
@@ -222,9 +225,19 @@ const data = [
                 }
             }
         }
+    }
 
-
-
+    @media screen and (max-width: 979px) {
+        .blog {
+            & > a {
+                flex-direction: column;
+                padding: 0 4vw 4vw;
+                .left, .right {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
     }
 }
 </style>

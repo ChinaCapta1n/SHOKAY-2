@@ -1,7 +1,5 @@
 <template>
     <div class="methodology">
-
-
         <div class="container">
             <h2>Methodology</h2>
             <div class="steps">
@@ -131,6 +129,57 @@
                 justify-content: center;
                 height: 20.9rem;
                 padding: 0 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        .container {
+            & > h2 {
+                text-align: center;
+                font-size: 2.1rem;
+                margin-bottom: 4rem;
+            }
+
+            .steps {
+                // flex-direction: column;
+            }
+        }
+    }
+
+    @media screen and (max-width: 681px) {
+        .container {
+            .steps {
+                flex-direction: column;
+
+                .step, .arrow {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .arrow {
+                    height: 7rem;
+                    margin-bottom: 2rem;
+
+                    svg {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                .step {
+                    margin-bottom: 0;
+                    p {
+                        width: 100%;
+                    }
+                    &:nth-last-child(1) {
+                        margin-bottom: 3rem;
+                    }
+                    img {
+                        width: 90%;
+                        height: 25rem;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }

@@ -69,5 +69,22 @@
             line-height: 2;
         }
     }
+
+    @media screen and (max-width: 820px) {
+        .banner {
+            height: 26rem;
+            & > h2 {
+                font-size: 2.4rem;
+            }
+        }
+
+        .text {
+            padding: 4vw 5vw;
+            p {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+        }
+    }
 }
 </style>

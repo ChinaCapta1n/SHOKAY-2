@@ -37,6 +37,7 @@ defineProps({
         img {
             width: inherit;
             height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -66,6 +67,15 @@ defineProps({
             &>button {
                 margin-top: 1rem;
             }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            height: auto;
         }
     }
 }
