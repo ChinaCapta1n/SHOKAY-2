@@ -19,7 +19,7 @@
 <style lang="less" scoped>
 .purchase {
     width: 100%;
-    height: 46.6rme;
+    height: 46.6rem;
     position: relative;
 
     &>img {
@@ -38,6 +38,18 @@
         font-size: 2rem;
         line-height: 1.8;
         font-family: serif;
+    }
+
+    @media screen and (max-width: 668px) {
+        .info-box {
+            min-width: 80%;
+        }
+    }
+    @media screen and (max-width: 437px) {
+        .info-box {
+            width: 90%;
+            height: 90%;
+        }
     }
 }
 </style>

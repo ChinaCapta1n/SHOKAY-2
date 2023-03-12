@@ -50,15 +50,24 @@ const routes = [
     },
     {
         path: "/accessories",
-        component: () => import("@/views/sourcing/sub-menu/accessories.vue")
+        component: () => import("@/views/sourcing/sub-menu/accessories.vue"),
+        meta: {
+            title: "ACCESSORIES | SHOKAY"
+        }
     },
     {
         path: "/apparel",
-        component: () => import("@/views/sourcing/sub-menu/apparel.vue")
+        component: () => import("@/views/sourcing/sub-menu/apparel.vue"),
+        meta: {
+            title: "APPAREL | SHOKAY"
+        }
     },
     {
         path: "/sub-accessories",
-        component: () => import("@/views/sourcing/sub-menu/sub-accessories.vue")
+        component: () => import("@/views/sourcing/sub-menu/sub-accessories.vue"),
+        meta: {
+            title: "HOME & LIFESTYLE | SHOKAY"
+        }
     },
     {
         path: "/design",
@@ -131,27 +140,29 @@ const routes = [
             title: "ABOUT US | SHOKAY"
         }
     },
-    // {
-    //     path: "/our-story",
-    //     component: () => import("@/views/about-us/sub-menu/our-story.vue")
-    // },
     {
         path: "/partners",
-        component: () => import("@/views/about-us/sub-menu/partners.vue")
+        component: () => import("@/views/about-us/sub-menu/partners.vue"),
+        meta: {
+            title: "PARTNERS | SHOKAY"
+        }
     }
 ]
 
 const router = createRouter({
     history: createWebHashHistory(),
+    scrollBehavior() {
+        return {
+            top: 0
+        }
+    },
     routes
 })
 
-const blackList = [];
 
 router.beforeEach((to, from, next) => {
 
     if (to.path === "/impact") return;
-
 
 
     document.title = to.meta.title;

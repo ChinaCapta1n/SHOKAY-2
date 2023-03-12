@@ -52,7 +52,7 @@ import ButtonWithArrow from '@/components/button-with-arrow/index.vue';
             align-items: center;
             text-align: center;
 
-            >h2 {
+            &>h2 {
                 margin: 1.2rem 0;
             }
         }
@@ -65,6 +65,31 @@ import ButtonWithArrow from '@/components/button-with-arrow/index.vue';
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        flex-direction: column-reverse;
+
+        .left, .right {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        margin-top: 3rem;
+        margin-bottom: 0;
+
+        .right {
+            height: 20.7rem;
+        }
+
+        .left {
+            .container {
+                p {
+                    padding: 0 3vw;
+                }
+            }
         }
     }
 }

@@ -67,5 +67,33 @@ import H2Title from './title-h2.vue';
             object-fit: cover;
         }
     }
+
+    @media screen and (max-width: 979px) {
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+        height: auto;
+        margin-bottom: 0;
+
+        .left {
+            .container {
+                width: 100%;
+                padding: 4vw;
+
+                & > h2 {
+                    margin: 3vw 0 5rem;
+                    line-height: 1.8;
+                }
+
+                .sub-title {
+                    line-height: 1.8;
+                    margin-bottom: 2rem;
+                }
+
+                & > p {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
 }
 </style>

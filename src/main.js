@@ -8,9 +8,15 @@ import './assets/styles/index.less';
 
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 createApp(App).use(router).use(pinia).mount('#app');
 =======
 console.log(111)
 
 createApp(App).mount('#app');
 >>>>>>> 1a1707413495638af423548a349f9e4b55c85c26
+=======
+
+
+createApp(App).use(pinia).use(router).mount('#app');
+>>>>>>> develop

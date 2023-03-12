@@ -65,5 +65,15 @@
             }
         }
     }
+
+    @media screen and (max-width: 979px) {
+        .wrapper {
+            flex-direction: column;
+            li {
+                flex: auto;
+                height: 25rem;
+            }
+        }
+    }
 }
 </style>

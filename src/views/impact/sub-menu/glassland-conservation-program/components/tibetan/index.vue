@@ -58,5 +58,27 @@
             }
         }
     }
+
+    @media screen and (max-width: 979px) {
+        padding: 5vw 0;
+        .container {
+            flex-direction: column-reverse;
+            padding: 0 3vw;
+            .left {
+                padding: 0 3vw;
+                p {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    }
 }
 </style>

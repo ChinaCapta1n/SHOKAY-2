@@ -77,6 +77,7 @@ import ButtonWithArrow from '@/components/button-with-arrow/index.vue';
 
             img {
                 width: inherit;
+                object-fit: cover;
             }
         }
     }
@@ -84,6 +85,32 @@ import ButtonWithArrow from '@/components/button-with-arrow/index.vue';
     &>button {
         align-self: center;
         margin-top: 8rem;
+    }
+
+    @media screen and (max-width: 979px) {
+        padding-bottom: 5rem;
+        padding-top: 0;
+        .container {
+            width: 100%;
+            max-width: 100%;
+            flex-direction: column-reverse;
+
+            .left {
+                padding: 3vw;
+            }
+
+            .right {
+                width: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        & > button {
+            margin-top: 4rem;
+        }
     }
 }
 </style>

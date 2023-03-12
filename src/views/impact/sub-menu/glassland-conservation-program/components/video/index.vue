@@ -26,15 +26,22 @@
 
     .video-wrapper {
         width: 59.5rem;
+        height: 30rem;
         position: relative;
         margin: 0 auto;
-        padding-bottom: 24%;
 
         iframe {
             position: absolute;
             width: 100%;
             height: 100%;
             display: block;
+        }
+    }
+
+    @media screen and (max-width: 677px) {
+        padding: 2rem 0;
+        .video-wrapper {
+            width: 100%;
         }
     }
 }

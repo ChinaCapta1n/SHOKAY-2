@@ -68,5 +68,16 @@
             }
         }
     }
+
+    @media screen and (max-width: 979px) {
+        flex-direction: column;
+        .left, .right {
+            width: 100%;
+        }
+
+        .left {
+            height: 50vw;
+        }
+    }
 }
 </style>

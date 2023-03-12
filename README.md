@@ -4,16 +4,55 @@
 ## 进度
 - HOME
     - pc ✔
-    - mobile
+    - mobile ✅
+
+- ABOUT US
+    - pc ✅
+    - mobile ✅
+  
 - BLOG
     - pc ✔
-    - mobile
+    - mobile ✅
+
+- IMPACT
+    - pc ✅
+    - mobile ✅
+
+- MATKETING
+    - pc ✅
+    - mobile ✅
+  
 - DESIGN
     - pc ✔
-    - mobile
-- ABOUT US
-    - pc
-    - mobile
+    - mobile ✅
+  
+- SOURCING
+  - pc ✅
+  - mobile ✅
+
+- FIBER
+  - pc ✅
+  - mobile ✅
+
+- NAVIGATION
+  - pc ✅
+  - mobile
+
+- 组件过度特效 ✅
+
+- 导航组件
+  - pc ✅
+  - mobile ✅
+
+- pc导航吸顶功能 ✅
+
+- 路由淡入淡出特效 ✅
+
+- i18n
+
+- search componet
+
+
 
 ## 主要技术栈
 Vue3 + Vite + Less + Axios + Vue-router + Pinia
@@ -27,4 +66,3 @@ step 2
 ```shell
 npm run dev
 ```
-

@@ -17,6 +17,4 @@ import JoinUs from './components/join-us/index.vue';
 
 </script>
 
-<style lang="less" scoped>
-.glassland-conservation-program {}
-</style>
+<style lang="less" scoped></style>

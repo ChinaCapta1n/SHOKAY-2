@@ -51,5 +51,15 @@
             line-height: 1.5;
         }
     }
+
+    @media screen and (max-width: 797px) {
+        height: 20.5rem;
+
+        .box {
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
 }
 </style>

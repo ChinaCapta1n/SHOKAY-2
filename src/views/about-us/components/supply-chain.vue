@@ -169,5 +169,40 @@ import PurchaseButton from '@/components/button/index.vue';
             }
         }
     }
+
+    @media screen and (max-width: 979px) {
+        .container {
+            padding: 0 3vw;
+            .top {
+                flex-direction: column-reverse;
+                .left {
+                    padding: 4vw;
+                }
+
+                .right {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .bottom {
+                flex-direction: column;
+
+                .left {
+                    width: 100%;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                .right {
+                    padding-bottom: calc(341px + 10vw);
+                }
+            }
+        }
+    }
 }
 </style>

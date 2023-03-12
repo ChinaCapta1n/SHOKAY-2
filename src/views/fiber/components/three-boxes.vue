@@ -72,5 +72,24 @@
             }
         }
     }
+
+    @media screen and (max-width: 979px) {
+        flex-direction: column;
+
+        .left, .right {
+            height: 30rem;
+            img {
+                height: 30rem;
+            }
+        }
+
+        .middle {
+            .wrapper {
+                position: static;
+                width: 100%;
+                padding: 4rem;
+            }
+        }
+    }
 }
 </style>

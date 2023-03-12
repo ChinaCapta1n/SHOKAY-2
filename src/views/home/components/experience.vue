@@ -37,5 +37,28 @@ import HomeButton from '../../../components/button/index.vue';
         width: 71rem;
         margin: 0 auto;
     }
+
+    @media screen and (max-width: 979px) {
+        padding: 5vw 3vw;
+        height: auto;
+        .container {
+            width: 100%;
+            padding: 0 4vw;
+
+            h2 {
+                text-align: center;
+                line-height: 1.8;
+                margin-bottom: 4rem;
+            }
+
+            p {
+                margin-bottom: 3rem;
+            }
+            
+            & > button {
+                margin: 2rem 0 6rem;
+            }
+        }
+    }
 }
 </style>

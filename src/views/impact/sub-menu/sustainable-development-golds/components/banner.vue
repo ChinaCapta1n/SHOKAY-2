@@ -38,5 +38,12 @@
             height: 100%;
         }
     }
+
+    @media screen and (max-width: 484px) {
+        .center-img {
+            width: 90%;
+            height: auto;
+        }
+    }
 }
 </style>

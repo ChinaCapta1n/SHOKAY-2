@@ -23,7 +23,7 @@
 
 <style lang="less" scoped>
 .back-to-beginning {
-    padding: 5rem 0 7rem;
+    padding: 5rem 3rem 7rem;
 
     .container {
         height: 100%;
@@ -69,6 +69,14 @@
             &::after {
                 right: -21%;
                 bottom: -30%;
+            }
+
+            @media screen and (max-width: 979px) {
+                    &::before, &::after {
+                        width: 100%;
+                    left: 0;
+                    right: 0;
+                    }
             }
         }
 

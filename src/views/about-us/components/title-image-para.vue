@@ -58,5 +58,23 @@ defineProps({
             }
         }
     }
+
+    @media screen and (max-width: 979px) {
+        padding-top: 0;
+        padding-bottom: 0;
+        .container {
+            width: 100%;
+            max-width: 100%;
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                padding: 3vw;
+            }
+        }
+    }
 }
 </style>

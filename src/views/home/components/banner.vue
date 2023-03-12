@@ -7,10 +7,10 @@
 
 <script setup>
 defineProps({
-    // height: {
-    //     tpye: Number,
-    //     required: true
-    // },
+    height: {
+        tpye: String,
+        required: true
+    },
     text: {
         type: String,
         required: true
@@ -24,7 +24,7 @@ defineProps({
 
 <style lang="less" scoped>
 .banner {
-    // height: 13.7rem;
+    height: v-bind(height);
     position: relative;
 
     img {
@@ -44,6 +44,12 @@ defineProps({
         font-weight: 400;
         text-align: center;
         width: 68.5rem;
+
+        @media screen and (max-width: 979px) {
+            width: 100%;
+            font-size: 2.6rem;
+            padding: 0 4vw;
+        }
     }
 }
 </style>

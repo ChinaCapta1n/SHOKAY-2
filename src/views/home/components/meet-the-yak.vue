@@ -51,5 +51,19 @@ import HomeButton from '../../../components/button/index.vue';
     .home-button {
         margin-top: 4rem;
     }
+
+    @media screen and (max-width: 979px) {
+        padding: 3vw;
+
+        h2 {
+            text-align: center;
+            line-height: 1.8;
+            padding: 6vw 2vw 0;
+        }
+
+        p {
+            padding: 0 3vw;
+        }
+    }
 }
 </style>

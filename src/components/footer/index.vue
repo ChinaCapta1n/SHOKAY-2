@@ -20,6 +20,10 @@
 <style lang="less" scoped>
 .footer-height {
     height: 4.3rem;
+
+    @media screen and (max-width: 490px) {
+        height: 8rem;
+    }
 }
 
 .footer {
@@ -61,6 +65,12 @@
             margin-right: 0.8rem;
             cursor: pointer;
         }
+    }
+
+    @media screen and (max-width: 490px) {
+        height: 8rem;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
 </style>

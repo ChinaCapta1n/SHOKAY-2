@@ -1,10 +1,12 @@
 <template>
     <button class="button-with-arrow">
-        {{ text }} <img src="../../assets/images/icons/arrow-right.svg" alt="">
+        {{ text }} <svg-icon color="#908766" />
     </button>
 </template>
 
 <script setup>
+import svgIcon from "../svg-icon/index.vue";
+
 defineProps({
     text: {
         type: String,
@@ -19,16 +21,20 @@ defineProps({
     background-color: #fff;
     border: 1px solid #938B6A;
     cursor: pointer;
-    color: #D4B89A;
+    color: #9e9679;
     width: fit-content;
     padding: 0 2rem;
     transition: .2s all;
 
     &:hover {
         background-color: #908766;
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
     }
 
-    &>img {
+    &>svg {
         width: 1.2rem;
         height: 1.2rem;
         transform: translate(0.2rem, 0.1rem);

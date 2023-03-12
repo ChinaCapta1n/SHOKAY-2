@@ -38,5 +38,20 @@ import ButtonWithArrow from '@/components/button-with-arrow/index.vue';
             font-size: 3.5rem;
         }
     }
+
+    @media screen and (max-width: 979px) {
+        margin-top: 0;
+        padding: 3vw;
+        height: auto;
+        .container {
+            & > h2 {
+                margin: 2rem 0 6rem;
+            }
+
+            & > p {
+                margin-bottom: 3rem;
+            }
+        }
+    }
 }
 </style>

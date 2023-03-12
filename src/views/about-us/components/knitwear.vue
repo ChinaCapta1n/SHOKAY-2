@@ -64,6 +64,7 @@ const data = [
 
         .cards {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
 
             .card {
@@ -71,6 +72,7 @@ const data = [
                 height: 32.1rem;
                 position: relative;
                 background-color: #756F63;
+                margin: 0 1vw 3rem;
 
                 &>p {
                     font-size: 1.6rem;
@@ -91,6 +93,22 @@ const data = [
 
         &>button {
             align-self: center;
+        }
+    }
+
+    @media screen and (max-width: 556px) {
+        .container {
+            .cards {
+                .card {
+                    width: 90%;
+                    height: auto;
+                    padding: 6vw;
+                    p {
+                        position: static;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

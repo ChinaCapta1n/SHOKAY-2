@@ -94,5 +94,13 @@ const data = [
             }
         }
     }
+
+    @media screen and (max-width: 830px) {
+        .container {
+            .title-and-text {
+                padding: 5vw;
+            }
+        }
+    }
 }
 </style>
